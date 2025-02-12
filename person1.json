@@ -1,0 +1,7 @@
+{
+    "name" : "spongebob",
+    "age" : 21,
+    "isemployed" : true,
+    "hobbies" : ["cooking","jellyfishing","karate"]
+    
+}

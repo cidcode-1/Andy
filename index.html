@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">AM</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#section2" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section3" class="nav-link">Weather</a>
+                </li>       
+            </ul>
+            <div class="searchlogo">
+                <input type="search" class="searchs" placeholder="Search for Foods">
+                <button class="searchbutton" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="25" viewBox="0 0 50 50" 
+                        style="fill:#FFFFFF;">
+                        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                    </svg>
+                </button>
+            </div>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>    
+    </header>    
+
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h1 class="title">Pizza</h1>
+                    
+                    <p class="details">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione libero natus recusandae aliquid dolore magnam minus autem. Eum, ipsam maxime. Hic tenetur distinctio blanditiis quam explicabo nemo beatae placeat.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at similique praesentium. Quo, nihil? Quas laboriosam, blanditiis architecto optio id numquam consectetur dicta voluptatum minus provident nisi vero deserunt ipsam?
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="buttonfav">See Recipe</a>
+                    </div>
+                    
+                </div> 
+                <div class="hero-image-wrapper">
+                    <img src="imgs/pitza.png" alt="pizza" height="500px">  
+                </div>               
+            </div>
+        </section>
+        </main>
+        <div id="meal-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="meal-title"></h2>
+                
+                <p id="meal-instructions"></p>
+                <ul id="meal-ingredients"></ul>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <section id="section2" class="menu-selection">
+            <div class="section-content">
+                <h1 class="section-title">Categories</h1>
+                <div class="category-container" id="category-container">  
+               
+                </div>
+            </div>
+        </section><br>
+
+ <!-- weather section -->
+        <section id="section3" class="wheather-selection"><br>
+            <h1 class="section3title">CHECK WEATHER</h1>
+            <div class="card">
+                <div class="searcher">
+                <input type="text" placeholder="Enter city name" spellcheck="">
+                <button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="25" viewBox="0 0 50 50"
+                style="fill:#0c0a0a;">
+                <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+            </svg>
+            </button>
+            </div>
+            <div class="weather">
+                <img src="imgs\rain.png" alt="" srcset="" class="weather-icon">
+                <h1 class="temp">31°C</h1>
+                <h2 class="city">Antipolo City</h2>
+                <div class="detalye">
+                    <div class="col">
+                        <img src="imgs/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>humidity</p>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="imgs/wind.png" alt="">
+                        <div>
+                            <p class="wind">15km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+               <div class="recomd-section">
+                <h1 class="title-reco">Best foods to eat in cold weather</h1>
+    <ul class="section-re">
+        <li class="reco-list">
+            <img src="imgs/pares.jpg" alt="Pares" class="reco-image">
+            <h3 class="fname">Pares</h3>
+            <p class="text">a serving of Filipino braised beef stew with garlic fried rice, and a bowl of clear soup</p>
+        </li>
+        <li class="reco-list">
+            <img src="imgs/lugaw.webp" alt="Lugaw" class="reco-image">
+            <h3 class="fname">Lugaw</h3>
+            <p class="text">This is a plain rice porridge flavored with aromatics and topped with toasted garlic, scallions, and a boiled egg.</p>
+        </li>
+        <li class="reco-list">
+            <img src="imgs/creamy-chicken-sopas-5.jpg" alt="Sopas" class="reco-image">
+            <h3 class="fname">Sopas</h3>
+            <p class="text">a Filipino soup made with macaroni, vegetables, meat, and evaporated milk</p>
+        </li>
+        <li class="reco-list">
+            <img src="imgs/creamy chicken.jpg" alt="Creamy Chicken" class="reco-image">
+            <h3 class="fname">Creamy Chicken</h3>
+            <p class="text">The classic chicken soup consists of a clear chicken broth, often with pieces of chicken or vegetables;</p>
+        </li>
+        <li class="reco-list">
+            <img src="imgs/ramen.jpg" alt="Ramen" class="reco-image">
+            <h3 class="fname">Ramen</h3>
+            <p class="text">a Japanese noodle soup made with wheat noodles, broth, and various toppings</p>
+        </li>
+        <li class="reco-list">
+            <img src="imgs/chickensoup.jpg" alt="Chicken Soup" class="reco-image">
+            <h3 class="fname">Chicken Soup</h3>
+            <p class="text">a soup made from chicken, simmered in water, usually with various other ingredients</p>
+        </li>
+    </ul>  
+</div>
+
+<!--hot weather -->
+<div class="recomd-section">
+    <h1 class="title-reco-hot">Best foods to eat in hot weather</h1>
+    <ul class="section-re">
+        <li class="reco-list">
+            <img src="hotimg\Cherry-Delight.jpg" alt="Pares" class="reco-image">
+            <h3 class="fname">Cherry Delight</h3>
+            <p class="text">It comes together in just minutes and is made of three simple layers.  If you want a dessert that’s not overly sweet yet delicious, this is it!</p>
+        </li>
+        <li class="reco-list">
+            <img src="hotimg\download.jpg" alt="Lugaw" class="reco-image">
+            <h3 class="fname">Halo-Halo</h3>
+            <p class="text">a combination of shaved ice layered with a variety of different ingredients: tropical fruits, ice cream, gelatin-based candies made from coconut water</p>
+        </li>
+        <li class="reco-list">
+            <img src="hotimg\Frozen-Margarita.jpg" alt="Sopas" class="reco-image">
+            <h3 class="fname">Frozen-Margarita</h3>
+            <p class="text">this Frozen Margarita recipe is cold, slushy, and delicious! It’s perfect for cooling down and relaxing on hot, sunny days.</p>
+        </li>
+        <li class="reco-list">
+            <img src="hotimg\Lemon-Ice.jpg" alt="Creamy Chicken" class="reco-image">
+            <h3 class="fname">Lemon Ice</h3>
+            <p class="text">a sweet and tart Italian dessert that's made with lemon juice, sugar, and water</p>
+        </li>
+        <li class="reco-list">
+            <img src="hotimg\Mixed-Berry.jpg" alt="Ramen" class="reco-image">
+            <h3 class="fname">Mixed Berry</h3>
+            <p class="text">a combination of different types of berries, such as strawberries, blueberries, raspberries, and blackberries.</p>
+        </li>
+        <li class="reco-list">
+            <img src="hotimg\Scoops-kinds-ice-cream.webp" alt="Chicken Soup" class="reco-image">
+            <h3 class="fname">Ice Cream</h3>
+            <p class="text">a frozen dessert made from milk, cream, sugar, and flavorings</p>
+        </li>
+    </ul>  
+</div>
+
+        </section>
+
+    
+
+    <script src="func.js"></script>
+</body>
+</html>
